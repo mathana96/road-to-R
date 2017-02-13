@@ -236,7 +236,8 @@ sum(survey$W.Hnd=="Left" & survey$Fold=="L on R", na.rm=TRUE)
 #What percentage of students who prefer their right hand on top when folding are also right handed (answer to 2 decimal places)?
 table(survey$W.Hnd, survey$Fold)
 
-
+#Function to get the mean/median etc of a group of data together
+tapply(CO2$uptake, CO2$Type, mean)
 
 
 
