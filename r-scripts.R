@@ -239,6 +239,12 @@ table(survey$W.Hnd, survey$Fold)
 #Function to get the mean/median etc of a group of data together
 tapply(CO2$uptake, CO2$Type, mean)
 
+#Using relative frequency to get probability (Student survey dataset)
+sum(survey$Age<=18 & survey$Sex=="Male", na.rm=TRUE)/length(na.omit(survey$W.Hnd))
+
+#Creating sample data
+sample(1:6, 10, replace = T)
+#sample(outcomes where 1,2,..,6 rolls of a die, 10 times roll, replace = True)
 
 
 
