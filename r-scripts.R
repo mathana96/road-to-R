@@ -17,9 +17,15 @@ x <− c( "A" , "A" , "K" , "U" , "K" , "K" , "A" , "U" , "A" , "K" , "A" ,
 table(x)
 
 #==========================================================================
+#Return the length of a column (no. of variables)
+length(column)
+
+#==========================================================================
 #Relative frequency
 
 table(x)/length(x) #Length returns the length of the vector
+
+sum(survey$Sex=="Male" & survey$W.Hand=="Left", na.rm=TRUE)/length(survey$Sex=="Male")
 
 #==========================================================================
 #Mode
