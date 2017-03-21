@@ -253,6 +253,9 @@ sample(1:6, 10, replace = T)
 #sample(outcomes where 1,2,..,6 rolls of a die, 10 times roll, replace = True)
 
 
+prop.table(UCBAdmissions, c(2,3))
+
+
 
 
 
